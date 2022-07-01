@@ -6,8 +6,12 @@ require('dotenv').config();
 const {graphqlHTTP} = require('express-graphql');
 const schema = require('./schema/schema');
 const port = process.env.PORT || 5000;
+const path = require('path');
 
 const app = express();
+
+const publicPath = path.join(__dirname, '..', 'public');
+app.use(express.static(publicPath));
 
 // Connect to Database
 connectDB();
