@@ -22,5 +22,5 @@ app.use(
 	})
 );
 
-app.get('/', (req, res) => { res.send('Hello from Express!')
+app.get('/', (req, res) => res.send('Hello from Express!'));
 app.listen(port, console.log(`Application running on ${port}`));
