@@ -2,10 +2,6 @@
 
 This project was created to track requests
 
-# Project Title
-
-This project was created to track requests
-
 ## Run Locally
 
 Clone the project
